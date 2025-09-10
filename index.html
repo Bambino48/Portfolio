@@ -4,255 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio Segnor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">Portfolio<span> Dev</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Développeur <span>Fullstack</span> Passionné</h1>
-                <p>Je crée des expériences web modernes, élégantes et fonctionnelles avec un code propre et maintenable.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-outline">Me contacter</a>
-                </div>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">Portfolio<span> Dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Développeur <span>Fullstack</span> Passionné</h1>
+            <p>Je crée des expériences web modernes, élégantes et fonctionnelles avec un code propre et maintenable.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>À propos de moi</h2>
-                <p>Découvrez mon parcours, mes compétences et ma passion pour le développement</p>
+<!-- About -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>À propos de moi</h2>
+            <p>Découvrez mon parcours, mes compétences et ma passion pour le développement</p>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./images/515438701_122128065398848226_6965430042899267573_n.JPG" alt="Développeur Segnor">
             </div>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="./images/515438701_122128065398848226_6965430042899267573_n.JPG" alt="Développeur Segnor">
-                </div>
-                <div class="about-text">
-                    <h3>Qui suis-je ?</h3>
-                    <p>Je suis un développeur fullstack passionné par la création d'applications web modernes et
-                        performantes. Avec plusieurs années d'expérience, j'ai travaillé sur divers projets allant des
-                        sites vitrines aux applications web complexes.</p>
-                    <p>Mon objectif est de créer des solutions élégantes qui répondent parfaitement aux besoins des
-                        utilisateurs tout en respectant les meilleures pratiques de développement.</p>
-                    <p>Je suis constamment à l'affût des nouvelles technologies et tendances pour améliorer mes
-                        compétences et offrir des produits de qualité.</p>
-                    <div class="skills">
-                        <span class="skill">HTML/CSS</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">React</span>
-                        <span class="skill">Next.js</span>
-                        <span class="skill">Node.js</span>
-                        <span class="skill">Python</span>
-                        <span class="skill">Java</span>
-                        <span class="skill">Php</span>
-                        <span class="skill">Git</span>
-                        <span class="skill">Responsive Design</span>
-                        <span class="skill">UI/UX</span>
-                    </div>
-                </div>
+            <div class="about-text">
+                <h3>Qui suis-je ?</h3>
+                <p>Développeur fullstack passionné par la création d'applications web modernes et performantes.</p>
+                <p>Mon objectif : créer des solutions élégantes répondant parfaitement aux besoins des utilisateurs.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Mes projets</h2>
-                <p>Une sélection de mes réalisations récentes</p>
+<!-- Services -->
+<section class="section services" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Mes Services</h2>
+            <p>Ce que je peux faire pour vous</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code service-icon"></i>
+                <h3>Développement Web</h3>
+                <p>Sites web modernes, responsive et performants avec HTML, CSS, JS et frameworks.</p>
             </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="./images/NeuroBot.PNG" alt="Projet 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>NeuroBot — Chatbot IA spécialisé en neurosciences</h3>
-                        <p>NeuroBot est une application web interactive intégrant l'API
-                            Gemini AI pour fournir des réponses pédagogiques et contextuelles exclusivement centrées
-                            sur les neurosciences.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">HTML5, CSS3, JavaScript</span>
-                            <span class="project-tag">GitHub Pages (frontend), Render (backend)</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://bambino48.github.io/NeuroBot/"><i class="fas fa-external-link-alt"></i>
-                                Voir le projet</a>
-                            <a href="https://github.com/Bambino48/NeuroBot.git"><i class="fab fa-github"></i> Code
-                                source</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="./images/pai.PNG"
-                            alt="Projet 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>Plateforme d'archivage intelligente</h3>
-                        <p>PAI utilise l'intelligence artificielle pour extraire, analyser et organiser le texte à
-                            partir de photos. Les données sont classées et archivées efficacement pour une gestion
-                            optimisée.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Html</span>
-                            <span class="project-tag">Php</span>
-                            <span class="project-tag">Css</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://sp-p6.com/bamba/projetarchive/index.html"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
-                            <a href="https://github.com/Bambino48/projetarchive.git"><i class="fab fa-github"></i> Code source</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80"
-                            alt="Projet 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dashboard Analytics</h3>
-                        <p>Tableau de bord interactif pour visualisation de données et analytics.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">D3.js</span>
-                            <span class="project-tag">Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
-                            <a href="#"><i class="fab fa-github"></i> Code source</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>Développement Mobile</h3>
+                <p>Applications natives et cross-platform avec React Native.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>UI/UX Design</h3>
+                <p>Design intuitif et ergonomique pour une expérience utilisateur optimale.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-server service-icon"></i>
+                <h3>Backend & API</h3>
+                <p>Conception et intégration d'APIs sécurisées avec Node.js, Python et PHP.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contactez-moi</h2>
-                <p>N'hésitez pas à me contacter pour discuter de votre projet</p>
+<!-- Skills -->
+<section class="section skills-section" id="skills">
+    <div class="container">
+        <div class="section-title">
+            <h2>Mes Compétences</h2>
+            <p>Technologies et outils que j'utilise pour créer des applications performantes</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h4>HTML5</h4>
+                <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>ibamba366@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Téléphone</h4>
-                            <p>+225 07 48 01 27 81</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Localisation</h4>
-                            <p>San-Pedro, Côte d'Ivoire</p>
-                        </div>
-                    </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h4>CSS3</h4>
+                <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square skill-icon"></i>
+                <h4>JavaScript</h4>
+                <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react skill-icon"></i>
+                <h4>React</h4>
+                <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node skill-icon"></i>
+                <h4>Node.js</h4>
+                <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h4>Python</h4>
+                <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="section projects" id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>Mes projets</h2>
+            <p>Une sélection de mes réalisations récentes</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./images/NeuroBot.PNG" alt="Projet 1">
+                <div class="project-info">
+                    <h3>NeuroBot</h3>
+                    <p>Chatbot IA spécialisé en neurosciences.</p>
+                    <a href="#">Voir le projet</a>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nom</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Envoyer le message</button>
-                    </form>
+            </div>
+            <div class="project-card">
+                <img src="./images/pai.PNG" alt="Projet 2">
+                <div class="project-info">
+                    <h3>PAI</h3>
+                    <p>Plateforme d'archivage intelligente avec IA.</p>
+                    <a href="#">Voir le projet</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-logo">Portfolio Dev</div>
-                    <p>Développeur fullstack passionné par la création d'expériences web exceptionnelles.</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-                </div>
+<!-- Contact -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contactez-moi</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item"><i class="fas fa-envelope"></i><p>ibamba366@gmail.com</p></div>
+                <div class="contact-item"><i class="fas fa-phone"></i><p>+225 07 48 01 27 81</p></div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><p>San-Pedro, Côte d'Ivoire</p></div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Ibr@him. Tous droits réservés.</p>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Ibr@him. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>

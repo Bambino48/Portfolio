@@ -1,38 +1,48 @@
+// Menu burger
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+menuBtn.addEventListener("click", () => { navLinks.classList.toggle("active"); });
 
-// Simple animation for elements when scrolling
-document.addEventListener('DOMContentLoaded', function () {
-    const fadeElements = document.querySelectorAll('.project-card, .about-img, .about-text, .contact-info, .contact-form');
-
-    const fadeInOptions = {
-        threshold: 0.3
-    };
-
-    const fadeInObserver = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, fadeInOptions);
-
-    fadeElements.forEach(element => {
-        fadeInObserver.observe(element);
+// Scroll Reveal
+const revealElements = document.querySelectorAll(".section,.service-card,.skill-card,.project-card,.contact-item");
+const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) el.classList.add("active-reveal");
     });
+};
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
 
-    // Mobile menu toggle
-    const menuBtn = document.querySelector('.menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuBtn.addEventListener('click', function () {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+// Skill bars animation
+const skillBars = document.querySelectorAll(".skill-progress");
+const animateSkills = () => {
+    skillBars.forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) bar.style.width = bar.dataset.width;
     });
+};
+window.addEventListener("scroll", animateSkills);
+window.addEventListener("load", animateSkills);
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Merci pour votre message ! Je vous répondrai très rapidement.');
-        contactForm.reset();
+// Optional: animate each link
+const navItems = document.querySelectorAll(".nav-links li");
+navBtnAnimation = () => {
+    navItems.forEach((item, index) => {
+        if(item.style.animation){
+            item.style.animation = '';
+        } else {
+            item.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`;
+        }
     });
-});
+};
+menuBtn.addEventListener("click", navBtnAnimation);
+
+// Keyframes for nav links
+const styleSheet = document.styleSheets[0];
+styleSheet.insertRule(`
+@keyframes navLinkFade {
+    from {opacity: 0; transform: translateX(-50px);}
+    to {opacity: 1; transform: translateX(0);}
+}`, styleSheet.cssRules.length);
